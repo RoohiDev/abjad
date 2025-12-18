@@ -1,44 +1,67 @@
 :root {
-    --color-1: #425F57;
-    --color-2: #749F82;
-    --color-3: #A8E890;
-    --color-4: #CFFF8D;
+    --color-1: #61b3ff;
+    --color-2: #aad6ff;
+    --color-3: #4099ff;
+    --color-4: #1e7ed8;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url('./fonts/Vazirmatn-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
     margin: 0;
     padding: 0;
-}
-
-html, body {
-    background: var(--color-1);
+    font-family: Vazirmatn;
     text-align: center;
     direction: rtl;
 }
-
+html{
+    height: 100vh;
+    background: #0e00cf;
+    background: linear-gradient(51deg, rgba(14, 0, 207, 1) 0%, rgba(0, 74, 201, 1) 48%, rgba(0, 212, 255, 1) 100%);
+}
 #content {
     width: 50vw;
     margin: 25vh auto;
 }
 
 #content > input#uin {
-    background: var(--color-4);
+    background: var(--color-2);
     width: 40vw;
-    /* color: var(--color-2); */
     padding: 1rem;
     font-size: 1rem;
     direction: rtl;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    margin-bottom: 0.5rem;
+
 }
 
 h1#out {
-    color: var(--color-4);
+    color: var(--color-2);
     font-size: 3rem;
 }
 
 button#btn {
-    background: var(--color-3);
+    background: var(--color-1);
     padding: 1rem;
     font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    transition: background-color 0.5s 0.1s;
+}
+button#btn:hover {
+    background-color: var(--color-3);
+}
+button#btn:active {
+    background-color: var(--color-4);
+    transition: background-color 0.1s;
 }
 
 footer {
@@ -51,7 +74,7 @@ footer {
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #content {
         width: 90vw;
     }
