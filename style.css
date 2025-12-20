@@ -65,15 +65,16 @@ button#btn:active {
 }
 
 footer {
-    background: #999292;
-    color: white;
+    background: #000000;
     text-align: center;
     padding: 1rem 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-
+footer > a {
+    color: #ffffff;
+}
 
 @media only screen and (max-width: 800px) {
     #content {
